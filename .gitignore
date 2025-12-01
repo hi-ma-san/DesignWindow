@@ -72,6 +72,13 @@ CMakeLists.txt.user*
 # --------
 *.dll
 *.exe
+DesignWindow
+
+# CodeQL
+_codeql_detected_source_root
+
+# Generated headers
+moc_predefs.h
 
 # Directories with generated files
 .moc/
