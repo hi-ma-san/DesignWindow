@@ -47,8 +47,19 @@
     <addaction name="actionAll"/>
     <addaction name="actionPaste"/>
    </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>視窗</string>
+    </property>
+    <addaction name="actionFullscreen"/>
+    <addaction name="actionShowLeft"/>
+    <addaction name="actionShowRight"/>
+    <addaction name="actionWindowMode"/>
+    <addaction name="actionMinimize"/>
+   </widget>
    <addaction name="menu_F"/>
    <addaction name="menu_E"/>
+   <addaction name="menu_W"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="fileToolBar">
@@ -174,6 +185,37 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionFullscreen">
+   <property name="text">
+    <string>全螢幕(&amp;F)</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionShowLeft">
+   <property name="text">
+    <string>左側顯示(&amp;L)</string>
+   </property>
+  </action>
+  <action name="actionShowRight">
+   <property name="text">
+    <string>右側顯示(&amp;R)</string>
+   </property>
+  </action>
+  <action name="actionWindowMode">
+   <property name="text">
+    <string>視窗模式(&amp;W)</string>
+   </property>
+  </action>
+  <action name="actionMinimize">
+   <property name="text">
+    <string>最小化(&amp;M)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
    </property>
   </action>
  </widget>
