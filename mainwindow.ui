@@ -13,7 +13,13 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -40,8 +46,8 @@
     <property name="title">
      <string>編輯</string>
     </property>
-    <addaction name="actionReduction"/>
-    <addaction name="actionRemake"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
     <addaction name="actionClip"/>
     <addaction name="actionCopy"/>
     <addaction name="actionAll"/>
@@ -81,6 +87,10 @@
    <addaction name="actionPaste"/>
   </widget>
   <action name="actionNew">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/new.png</normaloff>:/images/new.png</iconset>
+   </property>
    <property name="text">
     <string>新增(&amp;N)</string>
    </property>
@@ -89,6 +99,10 @@
    </property>
   </action>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+   </property>
    <property name="text">
     <string>開啟(&amp;O)</string>
    </property>
@@ -97,6 +111,10 @@
    </property>
   </action>
   <action name="actionClose">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/red-close-icon-free-png.jpg</normaloff>:/images/red-close-icon-free-png.jpg</iconset>
+   </property>
    <property name="text">
     <string>關閉(&amp;C)</string>
    </property>
@@ -105,6 +123,10 @@
    </property>
   </action>
   <action name="actionSave">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+   </property>
    <property name="text">
     <string>儲存(&amp;S)</string>
    </property>
@@ -113,6 +135,10 @@
    </property>
   </action>
   <action name="actionASave">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/asave.png</normaloff>:/images/asave.png</iconset>
+   </property>
    <property name="text">
     <string>另存新檔(&amp;A)</string>
    </property>
@@ -121,6 +147,10 @@
    </property>
   </action>
   <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/quit.png</normaloff>:/images/quit.png</iconset>
+   </property>
    <property name="text">
     <string>退出(&amp;X)</string>
    </property>
@@ -128,7 +158,11 @@
     <string>Ctrl+Shift+Q</string>
    </property>
   </action>
-  <action name="actionReduction">
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/undo.png</normaloff>:/images/undo.png</iconset>
+   </property>
    <property name="text">
     <string>還原(&amp;Z)</string>
    </property>
@@ -136,7 +170,11 @@
     <string>Ctrl+Z</string>
    </property>
   </action>
-  <action name="actionRemake">
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/redo.png</normaloff>:/images/redo.png</iconset>
+   </property>
    <property name="text">
     <string>重作(&amp;Y)</string>
    </property>
@@ -145,6 +183,10 @@
    </property>
   </action>
   <action name="actionClip">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/cut.png</normaloff>:/images/cut.png</iconset>
+   </property>
    <property name="text">
     <string>剪下(&amp;X)</string>
    </property>
@@ -153,6 +195,10 @@
    </property>
   </action>
   <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/copy.png</normaloff>:/images/copy.png</iconset>
+   </property>
    <property name="text">
     <string>複製(&amp;C)</string>
    </property>
@@ -161,6 +207,10 @@
    </property>
   </action>
   <action name="actionAll">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/editor.png</normaloff>:/images/editor.png</iconset>
+   </property>
    <property name="text">
     <string>全選(&amp;A)</string>
    </property>
@@ -169,6 +219,10 @@
    </property>
   </action>
   <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="images/designwindow.qrc">
+     <normaloff>:/images/paste.png</normaloff>:/images/paste.png</iconset>
+   </property>
    <property name="text">
     <string>貼上(&amp;V)</string>
    </property>
@@ -177,6 +231,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="images/designwindow.qrc"/>
+ </resources>
  <connections/>
 </ui>
