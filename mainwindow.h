@@ -3,6 +3,11 @@
 
 #include <QMainWindow>
 #include <ui_mainwindow.h>
+#include <QFileDialog>
+#include <QFile>
+#include <QTextStream>
+#include <QMessageBox>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,7 +24,13 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actionOpen_triggered();
+    void on_actionSave_triggered();
+    void on_actionASave_triggered();
+
 private:
     Ui::MainWindow *ui;
+    QString currentFilePath;
 };
 #endif // MAINWINDOW_H
