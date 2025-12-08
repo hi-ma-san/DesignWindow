@@ -8,6 +8,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <QString>
+#include <QFileInfo>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

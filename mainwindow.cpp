@@ -33,7 +33,7 @@ void MainWindow::on_actionOpen_triggered()
         file.close();
 
         currentFilePath = fileName;
-        setWindowTitle(tr("DesignWindow - %1").arg(fileName));
+        setWindowTitle(tr("DesignWindow - %1").arg(QFileInfo(fileName).fileName()));
     }
 }
 
@@ -78,7 +78,7 @@ void MainWindow::on_actionASave_triggered()
         file.close();
 
         currentFilePath = fileName;
-        setWindowTitle(tr("DesignWindow - %1").arg(fileName));
+        setWindowTitle(tr("DesignWindow - %1").arg(QFileInfo(fileName).fileName()));
         QMessageBox::information(this, tr("成功"),
             tr("檔案已儲存"));
     }
